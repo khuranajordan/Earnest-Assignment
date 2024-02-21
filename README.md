@@ -28,17 +28,36 @@ Task Manager allows users to create, manage, update, and delete tasks. It provid
 
 ## Folder Structure
 ```
-task-manager/
+
+Sure, here's how you can update your README.md file to include the folder structure:
+
+markdown
+Copy code
+# Task Manager App
+
+This is a simple Task Manager application built with Express.js and React.
+
+## Folder Structure
+
+parent-folder/
 │
-├── client/ # Frontend application built with React
-│ ├── public/ # Static assets and HTML template
-│ └── src/ # React components and styles
+├── client/ # Frontend folder
+│ ├── public/ # Public assets
+│ └── src/ # Source code
+│   ├── App.js # Main React component
+│   ├── index.js # Entry point for React app
+│   └── App.css # Styles for React app
 │
-├── server/ # Backend application built with Express.js
-│ ├── db/ # SQLite database and schema
-│ └── index.js # Express server setup and API endpoints
-│
-└── README.md # Project overview, installation, and usage instructions
+└── server/ # Backend folder
+    ├── models/ # Data models
+        └── Task.js/ 
+    ├── controllers/ # Business logic
+        └── taskController.js/
+    ├── routes/ # API routes
+        └── taskRoutes.js/ 
+    ├── tasks.db # SQLite database file
+    ├── index.js # Entry point for Express app
+    └── package.json # Backend dependencies
 ```
 
 ## Installation
